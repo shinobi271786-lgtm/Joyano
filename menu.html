@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/jpeg" href="./images/logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Joyano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <header id="navbar" class="fixed w-full z-50 flex items-center justify-between px-6 md:px-12 py-6 navbar">
+    <div class="flex items-center gap-3">
+      <img src="./images/logo.jpg" alt="Joyano Logo" class="h-12 w-12 md:h-14 md:w-14 object-contain" onerror="this.style.display='none'" />
+      <div class="flex flex-col">
+      <a href="index.html" class="serif text-2xl md:text-3xl font-bold tracking-tight text-[#4A5C28]">JOYANO</a>
+      <span class="text-[9px] font-semibold tracking-[4px] text-[#D8D592]">HANDMADE PASTA</span>
+    </div>
+    <nav class="hidden md:flex gap-10 items-center nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn-primary ml-4">Order Now</a>
+    </nav>
+    <button id="mobile-menu-btn" class="md:hidden text-[#4A5C28]">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+  </header>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-[#FFFDF6] flex-col pt-24 px-6 mobile-nav">
+    <a href="index.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Home</a>
+    <a href="menu.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Menu</a>
+    <a href="about.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">About</a>
+    <a href="contact.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Contact</a>
+    <a href="contact.html" class="mt-8 btn-primary text-center">Order Now</a>
+  </div>
+
+  <main class="flex-grow pt-32 px-6 md:px-12 flex flex-col gap-16 pb-12 max-w-6xl mx-auto w-full">
+    
+    <section class="text-center fade-in">
+      <h1 class="serif text-4xl md:text-5xl font-bold text-[#4A5C28] mb-4">Our Signature Pasta Collection</h1>
+      <div class="h-1 w-20 bg-[#4A5C28] mx-auto opacity-50 mb-6"></div>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+        Discover three handcrafted pasta dishes, each prepared fresh with homemade recipes and premium ingredients.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-12 fade-in">
+      
+      <!-- Zesty Red -->
+      <div class="glass p-6 md:p-8 rounded-[32px] flex flex-col md:flex-row gap-8 items-center">
+        <div class="w-full md:w-1/2">
+          <div class="card-img-wrapper">
+            <img src="./images/red_sauce.jpg" alt="Zesty Red Pasta" class="w-full h-[250px] object-cover rounded-2xl transition transform hover:scale-105 duration-500">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl"></span>
+            <h2 class="serif text-3xl font-bold text-[#4A5C28]">Zesty Red Pasta</h2>
+          </div>
+          <p class="text-gray-600 mb-6">Rich tomato sauce, herbs, garlic, premium spices.</p>
+          <div>
+            <a href="zesty-red.html" class="btn-primary">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- White Alfredo -->
+      <div class="glass p-6 md:p-8 rounded-[32px] flex flex-col md:flex-row-reverse gap-8 items-center">
+        <div class="w-full md:w-1/2">
+          <div class="card-img-wrapper">
+            <img src="./images/white_sauce.jpg" alt="White Alfredo Pasta" class="w-full h-[250px] object-cover rounded-2xl transition transform hover:scale-105 duration-500">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl"></span>
+            <h2 class="serif text-3xl font-bold text-[#4A5C28]">White Alfredo Pasta</h2>
+          </div>
+          <p class="text-gray-600 mb-6">Creamy Alfredo sauce with butter, cream, cheese, and herbs.</p>
+          <div>
+            <a href="white-alfredo.html" class="btn-primary">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Royal Spinach -->
+      <div class="glass p-6 md:p-8 rounded-[32px] flex flex-col md:flex-row gap-8 items-center">
+        <div class="w-full md:w-1/2">
+          <div class="card-img-wrapper">
+            <img src="./images/royal_spinach.jpg" alt="Royal Spinach Pasta" class="w-full h-[250px] object-cover rounded-2xl transition transform hover:scale-105 duration-500">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl"></span>
+            <h2 class="serif text-3xl font-bold text-[#4A5C28]">Royal Spinach Pasta</h2>
+          </div>
+          <p class="text-gray-600 mb-6">Creamy spinach sauce blended with herbs and fresh ingredients.</p>
+          <div>
+            <a href="royal-spinach.html" class="btn-primary">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="h-auto md:h-24 px-6 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between glass m-4 mx-6 md:mx-12 rounded-2xl gap-6 mt-auto">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full border-2 border-[#4A5C28] p-0.5">
+        <div class="w-full h-full rounded-full bg-[#4A5C28] flex items-center justify-center text-[#FFFDF6] serif font-bold"><img src="./images/logo.jpg" alt=""></div>
+      </div>
+      <div>
+        <p class="text-[10px] uppercase tracking-widest text-[#4A5C28] font-bold">"Don't just eat, indulge."</p>
+        <p class="serif font-bold text-lg leading-tight text-[#2E2E2E]">JOYANO</p>
+      </div>
+    </div>
+    <div class="text-center flex-1">
+      <p class="text-sm text-gray-600 italic serif">© 2026 Joyano. All Rights Reserved.</p>
+    </div>
+    <div class="text-center md:text-right">
+      <p class="text-sm text-[#4A5C28] font-bold">Order: 0325-2119796</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Joyano",
+  "description": "Joyano - Fresh Homemade Pasta. Don't just eat, indulge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

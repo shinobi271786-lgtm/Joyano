@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/jpeg" href="./images/logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Joyano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <header id="navbar" class="fixed w-full z-50 flex items-center justify-between px-6 md:px-12 py-6 navbar">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="Joyano Logo" class="h-12 w-12 md:h-14 md:w-14 object-contain" onerror="this.style.display='none'" />
+      <div class="flex flex-col">
+      <a href="index.html" class="serif text-2xl md:text-3xl font-bold tracking-tight text-[#4A5C28]">JOYANO</a>
+      <span class="text-[9px] font-semibold tracking-[4px] text-[#D8D592]">HANDMADE PASTA</span>
+    </div>
+    <nav class="hidden md:flex gap-10 items-center nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn-primary ml-4">Order Now</a>
+    </nav>
+    <button id="mobile-menu-btn" class="md:hidden text-[#4A5C28]">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+  </header>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-[#FFFDF6] flex-col pt-24 px-6 mobile-nav">
+    <a href="index.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Home</a>
+    <a href="menu.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Menu</a>
+    <a href="about.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">About</a>
+    <a href="contact.html" class="py-4 border-b border-[#4A5C28]/20 nav-link text-lg">Contact</a>
+    <a href="contact.html" class="mt-8 btn-primary text-center">Order Now</a>
+  </div>
+
+  <main class="flex-grow pt-32 px-6 md:px-12 pb-12 max-w-6xl mx-auto w-full fade-in">
+    
+    <div class="text-center mb-12">
+      <span class="tag">Contact Us</span>
+      <h1 class="serif text-5xl font-bold text-[#4A5C28] mb-4">Get In Touch</h1>
+      <div class="h-1 w-16 bg-[#4A5C28] mx-auto opacity-50"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Contact Info -->
+      <div class="glass p-8 md:p-10 rounded-[32px] shadow-xl">
+        <h2 class="serif text-3xl font-bold text-[#4A5C28] mb-8 border-b border-[#4A5C28]/20 pb-4">Information</h2>
+        
+        <div class="space-y-6 text-lg">
+          <div class="flex items-start">
+            <span class="w-32 font-semibold text-[#4A5C28]">Business:</span>
+            <span class="text-gray-700 serif font-bold">JOYANO</span>
+          </div>
+          <div class="flex items-start">
+            <span class="w-32 font-semibold text-[#4A5C28]">Founder:</span>
+            <span class="text-gray-700">Farah Shafiq</span>
+          </div>
+          <div class="flex items-start">
+            <span class="w-32 font-semibold text-[#4A5C28]">Phone:</span>
+            <a href="tel:03252119796" class="text-[#4A5C28] font-bold hover:opacity-70 transition"> 0325-2119796</a>
+          </div>
+          <div class="flex items-start">
+            <span class="w-32 font-semibold text-[#4A5C28]">Country:</span>
+            <span class="text-gray-700">Pakistan</span>
+          </div>
+          <div class="flex items-start">
+            <span class="w-32 font-semibold text-[#4A5C28]">Hours:</span>
+            <div class="text-gray-700">
+              <p>Monday – Sunday</p>
+              <p class="text-sm">10:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 p-6 rounded-2xl bg-[rgba(255,255,255,0.5)] border border-white/50">
+          <h3 class="serif font-bold text-xl text-[#4A5C28] mb-4">Order Policy</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center text-gray-700 text-sm">
+              <span class="text-[#D8D592] mr-2 text-lg">✔</span> Pre-orders only
+            </li>
+            <li class="flex items-center text-gray-700 text-sm">
+              <span class="text-[#D8D592] mr-2 text-lg">✔</span> Order at least one day before delivery
+            </li>
+            <li class="flex items-center text-gray-700 text-sm">
+              <span class="text-[#D8D592] mr-2 text-lg">✔</span> Freshly prepared after confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQs & CTA -->
+      <div class="flex flex-col justify-center">
+        <h2 class="serif text-3xl font-bold text-[#4A5C28] mb-8">Frequently Asked Questions</h2>
+        
+        <div class="space-y-8 mb-12">
+          <div>
+            <h4 class="serif font-bold text-xl text-[#4A5C28] mb-2">How do I place an order?</h4>
+            <p class="text-gray-700 border-l-2 border-[#D8D592] pl-4 text-sm">Simply contact us via phone and place your order at least one day in advance.</p>
+          </div>
+          <div>
+            <h4 class="serif font-bold text-xl text-[#4A5C28] mb-2">Is every order freshly prepared?</h4>
+            <p class="text-gray-700 border-l-2 border-[#D8D592] pl-4 text-sm">Yes. Every pasta dish is prepared fresh after your order is confirmed.</p>
+          </div>
+          <div>
+            <h4 class="serif font-bold text-xl text-[#4A5C28] mb-2">What pasta flavors are available?</h4>
+            <ul class="text-gray-700 border-l-2 border-[#D8D592] pl-4 text-sm space-y-1">
+              <li>• Zesty Red</li>
+              <li>• White Alfredo</li>
+              <li>• Royal Spinach</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass p-10 rounded-[32px] text-center shadow-lg relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-[#4A5C28]/10 to-transparent"></div>
+          <div class="relative z-10">
+            <h3 class="serif text-3xl font-bold mb-4 text-[#4A5C28]">Ready to Order?</h3>
+            <p class="mb-6 text-gray-700 text-lg">Contact us now to place your pre-order.</p>
+            <a href="https://wa.me/923252119796?text=Hello%20Joyano,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn-primary text-lg px-8 py-4 w-full md:w-auto">
+               0325-2119796
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="h-auto md:h-24 px-6 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between glass m-4 mx-6 md:mx-12 rounded-2xl gap-6 mt-auto">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full border-2 border-[#4A5C28] p-0.5">
+        <div class="w-full h-full rounded-full bg-[#4A5C28] flex items-center justify-center text-[#FFFDF6] serif font-bold"><img src="./images/logo.jpg" alt=""></div>
+      </div>
+      <div>
+        <p class="text-[10px] uppercase tracking-widest text-[#4A5C28] font-bold">"Don't just eat, indulge."</p>
+        <p class="serif font-bold text-lg leading-tight text-[#2E2E2E]">JOYANO</p>
+      </div>
+    </div>
+    <div class="text-center flex-1">
+      <p class="text-sm text-gray-600 italic serif">© 2026 Joyano. All Rights Reserved.</p>
+    </div>
+    <div class="text-center md:text-right">
+      <p class="text-sm text-[#4A5C28] font-bold">Order: 0325-2119796</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
